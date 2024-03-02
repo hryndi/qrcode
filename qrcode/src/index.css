@@ -1,68 +1,55 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+:root,
 body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  background-color: hsl(212, 45%, 89%);
+  width: 100%;
+  padding: 0;
   margin: 0;
+  height: 100vh;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.card-wrapper {
+  width: 330px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.img {
+  padding: 15px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.img img {
+  width: 100%;
+  border-radius: 12px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.theme h1 {
+  font-weight: 700;
+  color: hsl(218, 55%, 25%);
+  text-align: center;
+  margin: 0 20px 0 20px;
+  width: auto;
+  font-size: 23px;
+}
+
+.info {
+  margin-top: 15px;
+  padding: 1;
+}
+.info p {
+  color: hsl(211, 22%, 63%);
+  font-size: 16px;
+  text-align: center;
+  margin: 0 25px 0 25px;
 }
